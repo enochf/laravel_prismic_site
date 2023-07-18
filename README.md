@@ -13,4 +13,9 @@ The following code was used for a university website and was built on the Larave
 - HTML
 - CSS / LESS
 
-See more images and other work at [EnochFredericks.com](https://enochfredericks.com)
+## Project Details
+
+- Year Built: 2020
+- Client: Colorado State University Global (CSU Global)
+
+See more work at [EnochFredericks.com](https://enochfredericks.com)
