@@ -1,0 +1,174 @@
+div.page {
+	.invalid {
+		text-align:center;
+		p {
+			font-weight: 700;
+			color:@red;
+		}
+	}
+	.success {
+		text-align:center;
+		p {
+			font-weight: 700;
+		}
+	}
+	#main {
+		form {
+			max-width: 500px;
+    		margin: 0 auto;
+		}
+		.msg {
+			color:@red;
+		}
+	}
+	#rfi_short {
+		display:block;
+		position:relative;
+		text-align:center;
+		width:90%;
+		position:absolute;
+		top:0;
+		right:0;
+		background:fade(@blue-dark, 80%);
+		.boxsizing(border-box);
+		padding:0px 20px 30px 20px;
+		overflow:hidden;
+		z-index:998;
+		.animated (.5s);
+		@media @tablet-down {
+			display:none;
+			position:fixed;
+			top:50px;
+			left:0px;
+			bottom:0px;
+			width:100%;
+			background:fade(@blue-dark, 90%);
+			overflow-y:scroll;
+			-webkit-transition: none;
+    		transition: none;
+		}
+		&.fullForm {
+			background:fade(@blue-dark, 100%);
+		}
+		h3 {
+			font-size:28px;
+			text-transform: none;
+			color:#fff;
+			&:after {
+				display:none;
+			}
+		}
+		p {
+			font-size:18px;
+			color:#fff;
+			line-height: 1.3em;
+			&.disclaimer {
+				font-size:14px;
+			}
+		}
+	}
+	input[type=text], input[type=phone], input[type=email], input[type=tel], select, textarea {
+		border:solid 1px @gray-light;
+		background-color:#fff;
+		padding:10px;
+		font-size:16px;
+		color:@gray-medium;
+		width:100%;
+		margin:5px auto;
+		.boxsizing(border-box);
+		height:45px;
+		background-image: none;
+		.border-radius(4px);
+		&.invalid {
+			text-align:inherit;
+			background-color:#a3e9e3;
+		}
+	}
+	input[type=submit] {
+		.button (@blue);
+		border:0;
+		margin:0 auto;
+		&:hover {
+			background-color:@green;
+		}
+	}
+	textarea {
+		min-height: 120px;
+	}
+	button {
+		display:block;
+		width:100%;
+		border:0;
+		.border-radius(3px);
+		padding:10px;
+		text-align:center;
+		.boxsizing(border-box);
+		&.timeline-nav-button {
+			width:auto;
+			border-radius:50px;
+			border: 2px solid #ddd;
+		}
+		&#expand {
+			background-color:rgba(0,0,0,0);
+			color:#fff;
+			width:100%;
+			outline:none;
+			.animated (.2s);
+			@media @tablet-down {
+				display:none;
+			}
+			&:hover {
+				background-color:rgba(0,0,0,.2);
+			}
+			i {
+				display:inline-block;
+				.animated (.5s);
+				&.rotate {
+					.rotated (180deg);
+				}
+			}
+		}
+	}
+	#rfi_submit {
+    	background-color: @blue;
+    	color:#fff;
+    	margin: 15px 0;
+	}
+	#extraForm {
+		display:none;
+		.animated (.3s);
+		@media @tablet-down {
+			display:block;
+		}
+		&.open {
+			display:block;
+		}
+	}
+	#mobile_search {
+        position:absolute;
+        top:15px;
+        left:0px;
+        width:100%;
+        input[type=text] {
+            width:90%;
+            margin:0px 5%;
+        }
+        #mobile_search_icon {
+            position:absolute;
+            top:15px;
+            right:10%;
+        }
+        #mobile_searchSubmit {
+            font-family:FontAwesome;
+            font-size:10px;
+            position:absolute;
+            top:0;
+            right:0;
+            padding:13px 2px;
+            margin-right:5%;
+            border:0;
+            background:none;
+            opacity:0;
+        }
+    }
+}

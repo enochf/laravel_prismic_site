@@ -1,0 +1,49 @@
+#privacySlide {
+	display:block;
+	width:100%;
+	padding: 20px 0 5px;
+	position:fixed;
+	z-index:9999;
+	bottom:-110px;
+	left:0;
+	right:0;
+	background-color:#70a1e6;
+	}
+#privacySlide  p {
+		color: #fff;
+		line-height: 1em;
+    	font-size: 14px;
+    	padding-right:80px;
+	}
+	#privacySlide a {
+		color: #fff;
+		text-decoration:underline;
+		cursor:pointer;
+	}
+#privacySlide  #closeSlide {
+    	background-color: #fff;
+    	text-transform: uppercase;
+    	text-decoration: none;
+    	color: #374864;
+    	display: inline-block;
+    	padding: 5px 10px;
+    	margin-left:40px;
+	}
+#privacySlide  #closeSlide:hover {
+    		text-decoration:underline;
+    	}
+@media only screen and (max-width : 768px) {
+	#privacySlide  #closeSlide {
+		position:relative;
+		top:0;
+		left:0;
+		right:0;
+		float:right;
+	}
+	#privacySlide  p {
+    	padding-right:80px;
+	}
+	#privacySlide {
+	bottom:-360px;
+	}
+}

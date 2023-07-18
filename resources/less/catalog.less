@@ -1,0 +1,207 @@
+#catalog {
+    position:relative;
+}
+#catalog .flex-container {
+    display:flex;
+    align-items:stretch;
+}
+#catalog .col {
+    position:relative;
+}
+
+/* TITLE
+------------------------------------------------- */
+#catalog #versions {
+    position:relative;
+    float:right;
+}
+#catalog #versions a {
+    display:block;
+    color:#1c2333;
+    font-size:16px;
+    margin:15px 0px 15px 0px;
+}
+#catalog #versions #versions_container {
+    display:none;
+    padding-bottom: 10px;
+    text-align:right;
+    border-bottom: 1px solid #ccc;
+}
+#catalog #versions #versions_container a {
+    display:block;
+    margin:0px;
+    padding:15px;
+    color:#9e1831;
+    line-height:.5em;
+}
+
+/* TITLE
+------------------------------------------------- */
+#catalog h2 {
+    margin-bottom:30px;
+    border-bottom:1px solid #ccc;
+}
+#catalog h2:after {
+    width:0px;
+    height:0px;
+}
+
+/* NAVIGATION
+------------------------------------------------- */
+#catalog #cat_nav {
+    margin:0px;
+    padding:0px;
+    width:100%;
+    list-style-type: none;
+}
+#catalog #cat_nav.sticky {
+    position: fixed;
+    top: 150px;
+}
+#catalog #cat_nav.sticky.end {
+    position:absolute;
+    top:auto;
+    bottom:0px;
+}
+#catalog #cat_nav ul {
+    display:none;
+    margin:0px;
+    padding-left:20px;
+    list-style-type: none;
+}
+#catalog #cat_nav ul a {
+    display: block;
+    padding: 5px;
+    line-height: 24px;
+}
+#catalog #cat_nav .cat_nav_t1 {
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+#catalog #cat_nav .cat_nav_t1:visited,
+#catalog #cat_nav .cat_nav_t1:active {
+    text-decoration:none;
+}
+#catalog #cat_nav .cat_nav_t1:hover,
+#catalog #cat_nav ul a:hover {
+    background-color:#f3f3f3;
+}
+#catalog #cat_nav #cat_hamburger {
+    display:none;
+    padding:10px 19px;
+    color: #fff;
+    background-color: #18c9b9;
+}
+
+/* CONTENT SECTIONS
+------------------------------------------------- */
+#catalog #middle_col {
+    min-height:500px;
+}
+#catalog .cat_content {
+    display: none;
+    -webkit-transition:all .2s;
+    transition:all .2s;
+}
+#catalog .cat_content.active {
+    display: block;
+    -webkit-transition:all .2s;
+    transition:all .2s;
+}
+#catalog .cat_content h4 {
+    font-weight:700;
+}
+:target {
+    display: block;
+    position: relative;
+    top: -150px; 
+    visibility: hidden;
+}
+.backtotop {
+    display: block;
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align:center;
+    border-top: 1px solid #ccc;
+}
+
+/* RIGHT SIDE
+------------------------------------------------- */
+#catalog #cat_rs {
+    background-color: #f3f3f3;
+}
+#catalog #rs_nav {
+    padding:0px;
+    margin-top:20px;
+    list-style:none;
+}
+#catalog #rs_nav li {
+    padding:8px 0px;
+    line-height:1em;
+    border-bottom:1px solid #d8d8d8;
+}
+#catalog #rs_nav li:hover {
+    background-color:#eee;
+}
+#catalog #rs_nav li a {
+    display:block;
+    font-size:12px;
+}
+#catalog #rs_nav li a:hover {
+    color:#1c2333;
+}
+#catalog #rs_nav li a.t1 {
+    font-weight:700;
+}
+#catalog #rs_nav li a.t2 {
+    padding-left:15px;
+}
+
+/* MOBILE STYLES
+------------------------------------------------- */
+@media (max-width: 768px) {
+    
+    #catalog #versions {
+        float:none;
+    }
+    #catalog #versions a {
+        margin-bottom:10px;
+        border-bottom: 1px solid #ccc;
+    }
+    #catalog #versions #versions_container {
+        margin-bottom:10px;
+        text-align:center;
+    }
+    #catalog #versions #versions_container a {
+        border:none;
+    }
+    
+    
+    #catalog #cat_rs {
+        display:none;
+    }
+    #catalog #cat_nav {
+        position:fixed;
+        top:50px;
+        left:0px;
+        z-index:1;
+        -webkit-transition: all .5s;
+        transition: all .5s;
+    }
+    #catalog #cat_nav.mobile_open {
+        right:0px;
+        bottom:0px;
+        background-color:#fff;
+        overflow-y: scroll;
+    }
+    #catalog #cat_nav #cat_hamburger {
+        display:block;
+    }
+    #catalog #cat_nav #mobile_collapse {
+        display:none;
+        padding-bottom:100px;
+    }
+}

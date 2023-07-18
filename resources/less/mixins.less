@@ -1,0 +1,80 @@
+.button(@color){
+    display:inline-block;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 35px;
+    background-color: @color;
+    .border-radius(4px);
+    .animated (.2s);
+    &:hover {
+    	color:#fff;
+    }
+}
+.button-no-style() {
+    display: inline-block;
+    appearance: none;
+    background: none;
+    border-radius: 0;
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    text-align: left;
+    cursor: pointer;
+}
+.animated(@duration) {
+	-webkit-transition: all @duration;
+    transition: all @duration;
+}
+.rotated (@degrees) {
+	transform:rotate(@degrees);
+   -webkit-transform:rotate(@degrees);
+   -moz-transform: rotate(@degrees);
+   -o-transform: rotate(@degrees);
+   -ms-transform: rotate(@degrees);
+}
+.bg-cover () {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position:center;
+}
+.border-radius (@size) {
+	-webkit-border-radius: @size;
+	-moz-border-radius: @size;
+	-o-border-radius: @size;
+	border-radius: @size;
+}
+.boxsizing (@type) {
+	box-sizing: @type;
+    -moz-box-sizing: @type;
+    -webkit-box-sizing: @type;
+}
+.inputbox (@width) {
+	display:block;
+	width:@width;
+    font-size:14px;
+    font-weight:500;
+    color:@blue-medium;
+    padding:10px 0px 10px 10px;
+    margin-bottom:15px;
+    background-color:rgba(0,0,0,.05);
+    .border-radius (5px);
+    border:none;
+    box-sizing: border-box;
+}
+.header3border(@color){
+	content:'';
+	display:block;
+	margin-bottom:20px;
+	position:relative;
+	width:60px;
+	height:5px;
+	background-color:@color;
+}

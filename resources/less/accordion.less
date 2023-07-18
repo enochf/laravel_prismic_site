@@ -1,0 +1,59 @@
+div.page {
+    .nav-tabs {
+        border-bottom: solid 1px #fff;
+    }
+    div.ccm-ui ul.nav-tabs > li > a {
+        text-transform: uppercase;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        font-weight: 500;
+        color: @blue-dark;
+        &:hover {
+            text-decoration: none;
+            color: @blue-light;
+        }
+        &.active {
+            color: @teal;
+        }
+    }
+    div.ccm-ui ul.nav-tabs > li a {
+        padding: 20px 40px;
+    }
+    .ccm-ui.jl_magic_tabs_default.jl_magic_tabs_controls.jl_magic_tabs.jl_magic_tabs_accordion
+        > ul.nav-tabs.nav.jl_magic_tabs
+        > li {
+        background-color: #d9deeb;
+    }
+    .ccm-ui.jl_magic_tabs_default.jl_magic_tabs_controls.jl_magic_tabs.jl_magic_tabs_accordion
+        > ul.nav-tabs.nav.jl_magic_tabs
+        > li.active {
+        background-color: @blue-dark;
+    }
+    .ccm-ui.jl_magic_tabs_default.jl_magic_tabs_controls.jl_magic_tabs.jl_magic_tabs_accordion
+        > ul.nav-tabs.nav.jl_magic_tabs
+        > li
+        > a:after {
+        font-family: "FontAwesome";
+        content: "\f0da";
+        font-weight: 400;
+        float: right;
+        text-decoration: none;
+        font-size: 140%;
+        color: @blue-dark;
+    }
+    .ccm-ui.jl_magic_tabs_default.jl_magic_tabs_controls.jl_magic_tabs.jl_magic_tabs_accordion
+        > ul.nav-tabs.nav.jl_magic_tabs
+        > li
+        > a.active:after {
+        content: "\f0d7";
+        color: #fff;
+    }
+    div.ccm-ui ul.nav-tabs > li.active:after {
+        display: none;
+    }
+    .jl_magic_tabs_divider {
+        padding: 30px 40px;
+        margin-left: -16px;
+        margin-right: -26px;
+    }
+}

@@ -1,0 +1,96 @@
+.associationList {
+    display: inline-block;
+    position:relative;
+    width: 100%;
+	margin-bottom:20px;
+	background-color:#fff;
+	border-radius:5px;
+	box-shadow:0px 0px 15px 5px rgba(0,0,0,.1);
+}
+.associationList ul {
+	float: left;
+	margin:0;
+	width:50%;
+	padding:0;
+	position:relative;
+}
+.associationList li {
+	display:block;
+	position:relative;
+	float:none;
+	clear:both;
+	width:100%;
+	font-size:14px;
+}
+.associationList .courseNumber {
+	background-color:#3f9edc;
+	color:#fff;
+	padding:5px;
+	display:block;
+	width:25%;
+	text-align:right;
+	float:left;
+	box-sizing:border-box;
+	position:relative;
+}
+.associationList .courseTitle {
+	padding:5px 10px;
+	display:block;
+	float: left;
+	box-sizing:border-box;
+	width:75%;
+	position:relative;
+}
+.associationList li:hover {
+	background-color:#f1f1f1;
+	cursor:pointer;
+	position:relative;
+}
+.associationList li:hover .courseNumber {
+	background-color:#3588bf;
+}
+.associationList li:hover .courseTitle {
+	background-color:#f1f1f1;
+	position:relative;
+}
+.associationList .courseDescription {
+	display:none;
+	position:absolute;
+	background-color:#fff;
+	left:25%;
+	z-index:999;
+	width:75%;
+	box-sizing:border-box;
+	padding:20px;
+	box-shadow:0px 0px 15px 5px rgba(0,0,0,.1);
+}
+.certList {
+	.associationList ul {
+		width:100%;
+	}
+	.associationList li:first-child .courseNumber {
+		border-radius: 5px 0 0 0;
+	}
+	.associationList li:last-child .courseNumber {
+		border-radius: 0 0 0 5px;
+	}
+}
+
+/* mobile overrides
+--------------------------------------------- */
+@media (max-width: 768px) {
+	.associationList ul {
+		float:initial;
+		width:100%;
+	}
+	.courseNumber {
+		width:20%;
+	}
+	.courseTitle {
+		width:80%;
+	}
+	.courseDescription {
+		left:0px;
+		width:100%;
+	}
+}
